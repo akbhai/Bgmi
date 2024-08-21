@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7201042924:AAER3LitjsPBcfmw7TmTnhOywNuNFUU2tgw')
+bot = telebot.TeleBot('7010998652:AAH2tDGfluQAvF7cEkM4ab0nnx1C-Y7467E')
 
 # Admin user IDs
-admin_id = ["1185995156"]
+admin_id = ["685652614"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["1185995156"]
+    admin_id = ["685652614"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -87,7 +87,7 @@ def record_command_logs(user_id, command, target=None, port=None, time=None):
 import datetime
 
 # Dictionary to store the approval expiry date for each user
-user_approval_expiry = {}
+user_approval_expiry = { 'user_id': "2024-08-20 22:18:00.561214"}
 
 # Function to calculate remaining approval time
 def get_remaining_approval_time(user_id):
