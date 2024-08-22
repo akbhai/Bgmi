@@ -2,10 +2,13 @@ import subprocess
 import time
 import logging
 from aiogram import Bot
+import socket
+import threading
 import asyncio
 
-API_TOKEN = '7301648378:AAHZt8SOGb72ivP0RQBPeRQQvDq-oyRAo9E'
-ADMIN_ID = '2022961119'
+
+API_TOKEN = '6995858099:AAGHnu5Ir-_rNFL7xpt3QPZD8YH5BvZDSUE'
+ADMIN_ID = '1791540109'
 MAX_RESTARTS = 5
 RESTART_PERIOD = 60  # Seconds
 
@@ -28,6 +31,7 @@ async def main():
     """Main function to manage bot process lifecycle."""
     restart_count = 0
     last_restart_time = time.time()
+    
     
     while True:
         if restart_count >= MAX_RESTARTS:
