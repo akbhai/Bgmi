@@ -128,3 +128,293 @@ Target: 4.213.64.116
 Port: 28006
 Time: 600
 
+UserID: 685652614 | Time: 2024-08-21 07:22:43.782495 | Command: /bgmi | Target: 20.204.188.3 | Port: 10402 | Time: 180
+Username: @ItsPG1
+Target: 20.204.188.3
+Port: 10402
+Time: 180
+
+UserID: 685652614 | Time: 2024-08-21 07:26:02.591134 | Command: /bgmi | Target: 20.204.188.3 | Port: 10402 | Time: 120
+Username: @ItsPG1
+Target: 20.204.188.3
+Port: 10402
+Time: 120
+
+UserID: 685652614 | Time: 2024-08-21 07:28:50.659957 | Command: /bgmi | Target: 20.204.188.3 | Port: 10402 | Time: 450
+Username: @ItsPG1
+Target: 20.204.188.3
+Port: 10402
+Time: 450
+
+UserID: 685652614 | Time: 2024-08-21 07:30:40.539317 | Command: /bgmi | Target: 20.204.188.3 | Port: 10402 | Time: 120
+Username: @ItsPG1
+Target: 20.204.188.3
+Port: 10402
+Time: 120
+
+UserID: 685652614 | Time: 2024-08-21 07:33:15.770334 | Command: /bgmi | Target: 20.204.188.3 | Port: 10402 | Time: 180
+Username: @ItsPG1
+Target: 20.204.188.3
+Port: 10402
+Time: 180
+
+UserID: 685652614 | Time: 2024-08-21 07:38:27.286831 | Command: /bgmi | Target: 20.204.188.3 | Port: 10402 | Time: 450
+Username: @ItsPG1
+Target: 20.204.188.3
+Port: 10402
+Time: 450
+
+UserID: 685652614 | Time: 2024-08-21 07:50:11.570389 | Command: /bgmi | Target: 20.198.104.226 | Port: 22966 | Time: 30
+Username: @ItsPG1
+Target: 20.198.104.226
+Port: 22966
+Time: 30
+
+UserID: 685652614 | Time: 2024-08-21 07:50:49.678504 | Command: /bgmi | Target: 20.198.104.226 | Port: 22966 | Time: 30
+Username: @ItsPG1
+Target: 20.198.104.226
+Port: 22966
+Time: 30
+
+UserID: 685652614 | Time: 2024-08-21 07:51:04.316471 | Command: /bgmi | Target: 20.198.104.226 | Port: 22966 | Time: 90
+Username: @ItsPG1
+Target: 20.198.104.226
+Port: 22966
+Time: 90
+
+UserID: 685652614 | Time: 2024-08-21 07:51:25.064844 | Command: /bgmi | Target: 20.198.104.226 | Port: 22966 | Time: 90
+Username: @ItsPG1
+Target: 20.198.104.226
+Port: 22966
+Time: 90
+
+UserID: 685652614 | Time: 2024-08-21 07:52:40.900398 | Command: /bgmi | Target: 20.198.104.226 | Port: 22966 | Time: 300
+Username: @ItsPG1
+Target: 20.198.104.226
+Port: 22966
+Time: 300
+
+UserID: 685652614 | Time: 2024-08-21 07:54:31.871605 | Command: /bgmi | Target: 20.198.104.226 | Port: 22966 | Time: 300
+Username: @ItsPG1
+Target: 20.198.104.226
+Port: 22966
+Time: 300
+
+UserID: 685652614 | Time: 2024-08-21 07:57:15.693373 | Command: /bgmi | Target: 20.198.104.226 | Port: 22966 | Time: 300
+Username: @ItsPG1
+Target: 20.198.104.226
+Port: 22966
+Time: 300
+
+UserID: 685652614 | Time: 2024-08-21 08:03:26.384764 | Command: /bgmi | Target: 20.198.104.226 | Port: 22966 | Time: 60
+Username: @ItsPG1
+Target: 20.198.104.226
+Port: 22966
+Time: 60
+
+UserID: 685652614 | Time: 2024-08-21 09:32:04.879605 | Command: /bgmi | Target: 20.235.53.163 | Port: 24986 | Time: 120
+Username: @ItsPG1
+Target: 20.235.53.163
+Port: 24986
+Time: 120
+
+UserID: 685652614 | Time: 2024-08-21 09:33:50.137033 | Command: /bgmi | Target: 20.235.53.163 | Port: 24986 | Time: 120
+Username: @ItsPG1
+Target: 20.235.53.163
+Port: 24986
+Time: 120
+
+UserID: 685652614 | Time: 2024-08-21 09:37:10.348954 | Command: /bgmi | Target: 4.213.64.205 | Port: 22244 | Time: 90
+Username: @ItsPG1
+Target: 4.213.64.205
+Port: 22244
+Time: 90
+
+UserID: 685652614 | Time: 2024-08-21 09:39:31.796025 | Command: /bgmi | Target: 4.213.64.205 | Port: 22244 | Time: 90
+Username: @ItsPG1
+Target: 4.213.64.205
+Port: 22244
+Time: 90
+
+UserID: 685652614 | Time: 2024-08-21 09:42:23.081373 | Command: /bgmi | Target: 4.213.64.205 | Port: 22244 | Time: 90
+Username: @ItsPG1
+Target: 4.213.64.205
+Port: 22244
+Time: 90
+
+UserID: 685652614 | Time: 2024-08-21 09:46:34.823356 | Command: /bgmi | Target: 4.213.64.205 | Port: 22244 | Time: 90
+Username: @ItsPG1
+Target: 4.213.64.205
+Port: 22244
+Time: 90
+
+UserID: 685652614 | Time: 2024-08-21 09:58:04.269833 | Command: /bgmi | Target: 20.235.95.67 | Port: 29317 | Time: 180
+Username: @ItsPG1
+Target: 20.235.95.67
+Port: 29317
+Time: 180
+
+UserID: 685652614 | Time: 2024-08-21 10:06:33.660885 | Command: /bgmi | Target: 20.235.95.67 | Port: 29317 | Time: 180
+Username: @ItsPG1
+Target: 20.235.95.67
+Port: 29317
+Time: 180
+
+UserID: 685652614 | Time: 2024-08-21 10:15:20.321243 | Command: /bgmi | Target: 20.235.95.67 | Port: 29317 | Time: 180
+Username: @ItsPG1
+Target: 20.235.95.67
+Port: 29317
+Time: 180
+
+UserID: 685652614 | Time: 2024-08-21 10:21:34.186471 | Command: /bgmi | Target: 20.235.95.67 | Port: 29317 | Time: 50
+Username: @ItsPG1
+Target: 20.235.95.67
+Port: 29317
+Time: 50
+
+UserID: 685652614 | Time: 2024-08-25 06:28:43.733110 | Command: /bgmi | Target: 20.204.191.192 | Port: 10485 | Time: 20
+Username: @ItsPG1
+Target: 20.204.191.192
+Port: 10485
+Time: 20
+
+UserID: 685652614 | Time: 2024-08-25 06:29:23.907059 | Command: /bgmi | Target: 20.204.191.192 | Port: 10485 | Time: 500
+Username: @ItsPG1
+Target: 20.204.191.192
+Port: 10485
+Time: 500
+
+UserID: 685652614 | Time: 2024-08-25 06:57:22.475659 | Command: /bgmi | Target: 20.219.161.180 | Port: 24756 | Time: 599
+Username: @ItsPG1
+Target: 20.219.161.180
+Port: 24756
+Time: 599
+
+UserID: 685652614 | Time: 2024-08-25 07:18:05.609916 | Command: /bgmi | Target: 20.198.79.110 | Port: 10632 | Time: 599
+Username: @ItsPG1
+Target: 20.198.79.110
+Port: 10632
+Time: 599
+
+UserID: 685652614 | Time: 2024-08-25 07:31:31.202371 | Command: /bgmi | Target: 20.219.78.143 | Port: 26834 | Time: 599
+UserID: 685652614 | Time: 2024-08-25 07:35:56.163130 | Command: /bgmi | Target: 20.219.78.143 | Port: 26834 | Time: 30
+Username: @ItsPG1
+Target: 20.219.78.143
+Port: 26834
+Time: 30
+
+UserID: 685652614 | Time: 2024-08-25 07:40:42.992183 | Command: /bgmi | Target: 20.219.78.143 | Port: 26834 | Time: 20
+Username: @ItsPG1
+Target: 20.219.78.143
+Port: 26834
+Time: 20
+
+UserID: 685652614 | Time: 2024-08-25 07:41:36.701872 | Command: /bgmi | Target: 20.219.78.143 | Port: 26834 | Time: 500
+Username: @ItsPG1
+Target: 20.219.78.143
+Port: 26834
+Time: 500
+
+UserID: 685652614 | Time: 2024-08-25 07:48:47.508081 | Command: /bgmi | Target: 20.219.78.143 | Port: 26834 | Time: 400
+Username: @ItsPG1
+Target: 20.219.78.143
+Port: 26834
+Time: 400
+
+UserID: 685652614 | Time: 2024-08-25 07:57:31.239524 | Command: /bgmi | Target: 20.204.39.75 | Port: 10235 | Time: 599
+Username: @ItsPG1
+Target: 20.204.39.75
+Port: 10235
+Time: 599
+
+UserID: 685652614 | Time: 2024-08-25 08:20:41.001557 | Command: /bgmi | Target: 20.204.39.75 | Port: 10235 | Time: 130
+Username: @ItsPG1
+Target: 20.204.39.75
+Port: 10235
+Time: 130
+
+UserID: 685652614 | Time: 2024-08-25 08:24:56.319067 | Command: /bgmi | Target: 20.204.39.75 | Port: 10235 | Time: 20
+Username: @ItsPG1
+Target: 20.204.39.75
+Port: 10235
+Time: 20
+
+UserID: 685652614 | Time: 2024-08-25 08:46:32.589726 | Command: /bgmi | Target: 20.204.187.93 | Port: 10376 | Time: 300
+Username: @ItsPG1
+Target: 20.204.187.93
+Port: 10376
+Time: 300
+
+UserID: 685652614 | Time: 2024-08-25 08:55:55.321183 | Command: /bgmi | Target: 20.204.187.93 | Port: 10376 | Time: 30
+Username: @ItsPG1
+Target: 20.204.187.93
+Port: 10376
+Time: 30
+
+UserID: 685652614 | Time: 2024-08-25 09:04:53.919768 | Command: /bgmi | Target: 4.213.65.0 | Port: 27730 | Time: 300
+Username: @ItsPG1
+Target: 4.213.65.0
+Port: 27730
+Time: 300
+
+UserID: 685652614 | Time: 2024-08-25 10:40:23.858832 | Command: /bgmi | Target: 20.204.130.58 | Port: 15819 | Time: 599
+Username: @ItsPG1
+Target: 20.204.130.58
+Port: 15819
+Time: 599
+
+UserID: 685652614 | Time: 2024-08-25 10:55:06.687341 | Command: /bgmi | Target: 20.204.130.58 | Port: 15819 | Time: 120
+Username: @ItsPG1
+Target: 20.204.130.58
+Port: 15819
+Time: 120
+
+UserID: 685652614 | Time: 2024-08-25 10:58:13.884363 | Command: /bgmi | Target: 20.204.130.58 | Port: 15819 | Time: 130
+Username: @ItsPG1
+Target: 20.204.130.58
+Port: 15819
+Time: 130
+
+UserID: 685652614 | Time: 2024-08-25 11:02:53.509486 | Command: /bgmi | Target: 20.204.130.58 | Port: 15819 | Time: 130
+Username: @ItsPG1
+Target: 20.204.130.58
+Port: 15819
+Time: 130
+
+UserID: 685652614 | Time: 2024-08-25 11:06:14.899112 | Command: /bgmi | Target: 20.204.130.58 | Port: 15819 | Time: 70
+Username: @ItsPG1
+Target: 20.204.130.58
+Port: 15819
+Time: 70
+
+UserID: 685652614 | Time: 2024-08-25 11:10:43.186175 | Command: /bgmi | Target: 4.213.68.241 | Port: 2400 | Time: 499
+Username: @ItsPG1
+Target: 4.213.68.241
+Port: 2400
+Time: 499
+
+UserID: 685652614 | Time: 2024-08-25 11:23:11.858690 | Command: /bgmi | Target: 4.213.68.241 | Port: 24000 | Time: 280
+UserID: 685652614 | Time: 2024-08-25 11:23:58.601545 | Command: /bgmi | Target: 4.213.68.241 | Port: 24000 | Time: 250
+Username: @ItsPG1
+Target: 4.213.68.241
+Port: 24000
+Time: 250
+
+UserID: 685652614 | Time: 2024-08-25 11:32:49.043989 | Command: /bgmi | Target: 4.213.68.241 | Port: 24000 | Time: 180
+Username: @ItsPG1
+Target: 4.213.68.241
+Port: 24000
+Time: 180
+
+UserID: 685652614 | Time: 2024-08-25 11:39:08.787456 | Command: /bgmi | Target: 4.213.68.241 | Port: 24000 | Time: 55
+Username: @ItsPG1
+Target: 4.213.68.241
+Port: 24000
+Time: 55
+
+UserID: 685652614 | Time: 2024-08-25 11:42:17.086128 | Command: /bgmi | Target: 4.213.68.241 | Port: 24000 | Time: 20
+Username: @ItsPG1
+Target: 4.213.68.241
+Port: 24000
+Time: 20
+
