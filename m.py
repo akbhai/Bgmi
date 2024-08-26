@@ -129,14 +129,14 @@ def add_user(message):
             duration_str = command[2]
 
             try:
-                duration = int(duration_str[:-4])  # Extract the numeric part of the duration
+                duration = int(duration_str[:-5])  # Extract the numeric part of the duration
                 if duration <= 0:
                     raise ValueError
-                time_unit = duration_str[-4:].lower()  # Extract the time unit (e.g., 'hour', 'day', 'week', 'month')
-                if time_unit not in ('hour', 'hours', 'day', 'days', 'week', 'weeks', 'month', 'months'):
+                time_unit = duration_str[-5:].lower()  # Extract the time unit (e.g., 'hour', 'day', 'week', 'month')
+                if time_unit not in ('hour', 'hours', 'day', 'dayss', 'week', 'weeks', 'month', 'months'):
                     raise ValueError
             except ValueError:
-                response = "Invalid duration format. Please provide a positive integer followed by 'hour(s)', 'day(s)', 'week(s)', or 'month(s)'."
+                response = "Invalid duration format. Please provide a positive integer followed by 'hours', 'dayss', 'weeks', or 'months'."
                 bot.reply_to(message, response)
                 return
 
@@ -391,7 +391,7 @@ def welcome_rules(message):
 @bot.message_handler(commands=['plan'])
 def welcome_plan(message):
     user_name = message.from_user.first_name
-    response = f'''{user_name}, Brother Only 1 Plan Is Powerfull Then Any Other Ddos !!:
+    response = f'''{user_name}, VIP HACK PLAN !!:
 
 Vip 🌟 :
 -> Attack Time : 300 (S)
