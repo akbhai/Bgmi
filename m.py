@@ -253,7 +253,7 @@ def show_all_users(message):
             response = "No data found ❌"
     else:
         response = "ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ, ʙᴜʏ:- @ItsPG1 ❄.."
-    bot.reply_to(message, response)ꜰ
+    bot.reply_to(message, response)
 
 @bot.message_handler(commands=['logs'])
 def show_recent_logs(message):
